@@ -6,12 +6,6 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService
-                serviceImplementation="com.github.vladogol.keymapxmlexporter.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.vladogol.keymapxmlexporter.services.MyProjectService"/>
-    </extensions>
-
     <actions>
         <action
                 id="keymapxmlexporter.KeymapToXml"
