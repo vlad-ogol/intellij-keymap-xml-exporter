@@ -1,7 +1,5 @@
-<!-- Keep a Changelog guide -> https://keepachangelog.com -->
-
 # intellij-keymap-exporter Changelog
 
 ## [Unreleased]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Export selected keymap to XML via menu `Help/Export Keymap to XML`
