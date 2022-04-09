@@ -17,9 +17,9 @@ internal class XmlDumper {
 
     fun dump(keymap: Keymap): String {
         val xmlBody = keymap.actionIdList.stream()
-                .map { actionId: String? -> toXmlString(actionId, keymap.getShortcuts(actionId)) }
-                .filter {s: String? -> s != null}
-                .collect(Collectors.joining("\n"))
+            .map { actionId: String? -> toXmlString(actionId, keymap.getShortcuts(actionId)) }
+            .filter { s: String? -> s != null }
+            .collect(Collectors.joining("\n"))
         return "<keymap version=\"1\" name=\"${keymap.presentableName}\">\n$xmlBody\n</keymap>"
     }
 
@@ -28,22 +28,27 @@ internal class XmlDumper {
             return null
         }
         val shortcutsXml = Arrays.stream(shortcuts)
-                .map { shortcut: Shortcut -> toShortcutXml(shortcut) }
-                .collect(Collectors.joining("\n"))
+            .map { shortcut: Shortcut -> toShortcutXml(shortcut) }
+            .collect(Collectors.joining("\n"))
         return "  <action id=\"$actionId\">\n$shortcutsXml\n  </action>"
     }
 
     private fun toShortcutXml(shortcut: Shortcut): String {
-        if (shortcut is KeyboardShortcut) {
-            return toShortcutXml(shortcut)
-        } else if (shortcut is KeyboardModifierGestureShortcut) {
-            return toShortcutXml(shortcut)
-        } else if (shortcut is PressureShortcut) {
-            return toShortcutXml(shortcut)
-        } else if (shortcut is MouseShortcut) {
-            return toShortcutXml(shortcut)
+        return when (shortcut) {
+            is KeyboardShortcut -> {
+                toShortcutXml(shortcut)
+            }
+            is KeyboardModifierGestureShortcut -> {
+                toShortcutXml(shortcut)
+            }
+            is PressureShortcut -> {
+                toShortcutXml(shortcut)
+            }
+            is MouseShortcut -> {
+                toShortcutXml(shortcut)
+            }
+            else -> throw UnsupportedOperationException("unknown shortcut type")
         }
-        throw UnsupportedOperationException("unknown shortcut type")
     }
 
     // <keyboard-shortcut first-keystroke="ctrl meta 6" second-keystroke="f" />
@@ -54,11 +59,8 @@ internal class XmlDumper {
     }
 
     private fun keyStrokeToXmlString(keyStrokeName: String, keyStroke: KeyStroke?): String {
-        if (keyStroke == null) {
-            return ""
-        } else {
-            return "$keyStrokeName=\"%s\"".format(keyStroke.toString().replace("pressed ", ""))
-        }
+        return if (keyStroke == null) ""
+        else "$keyStrokeName=\"%s\"".format(keyStroke.toString().replace("pressed ", ""))
     }
 
     // <keyboard-gesture-shortcut keystroke="meta 1" modifier="dblClick"/>
