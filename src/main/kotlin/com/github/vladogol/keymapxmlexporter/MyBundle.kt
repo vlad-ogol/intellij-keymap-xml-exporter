@@ -1,4 +1,4 @@
-package com.github.vladogol.intellijkeymapexporter
+package com.github.vladogol.keymapxmlexporter
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

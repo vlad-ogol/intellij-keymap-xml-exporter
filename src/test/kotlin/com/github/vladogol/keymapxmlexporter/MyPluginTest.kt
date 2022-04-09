@@ -1,4 +1,4 @@
-package com.github.vladogol.intellijkeymapexporter
+package com.github.vladogol.keymapxmlexporter
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.psi.xml.XmlFile

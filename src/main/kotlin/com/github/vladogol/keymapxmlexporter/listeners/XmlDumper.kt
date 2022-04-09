@@ -1,4 +1,4 @@
-package com.github.vladogol.intellijkeymapexporter.listeners
+package com.github.vladogol.keymapxmlexporter.listeners
 
 import com.intellij.openapi.actionSystem.KeyboardModifierGestureShortcut
 import com.intellij.openapi.actionSystem.KeyboardShortcut

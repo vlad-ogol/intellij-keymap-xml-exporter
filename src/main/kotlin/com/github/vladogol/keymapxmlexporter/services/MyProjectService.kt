@@ -1,7 +1,7 @@
-package com.github.vladogol.intellijkeymapexporter.services
+package com.github.vladogol.keymapxmlexporter.services
 
 import com.intellij.openapi.project.Project
-import com.github.vladogol.intellijkeymapexporter.MyBundle
+import com.github.vladogol.keymapxmlexporter.MyBundle
 
 class MyProjectService(project: Project) {
 

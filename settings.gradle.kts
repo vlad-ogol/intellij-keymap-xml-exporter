@@ -1,1 +1,1 @@
-rootProject.name = "intellij-keymap-exporter"
+rootProject.name = "intellij-keymap-xml-exporter"

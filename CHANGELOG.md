@@ -1,4 +1,4 @@
-# intellij-keymap-exporter Changelog
+# intellij-keymap-xml-exporter Changelog
 
 ## [Unreleased]
 ### Added

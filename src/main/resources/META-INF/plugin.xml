@@ -1,21 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.vladogol.intellijkeymapexporter</id>
-    <name>Keymap to XML</name>
+    <id>com.github.vladogol.keymapxmlexporter</id>
+    <name>Keymap XML Exporter</name>
     <vendor>vlad-ogol</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService
-                serviceImplementation="com.github.vladogol.intellijkeymapexporter.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.vladogol.intellijkeymapexporter.services.MyProjectService"/>
+                serviceImplementation="com.github.vladogol.keymapxmlexporter.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.vladogol.keymapxmlexporter.services.MyProjectService"/>
     </extensions>
 
     <actions>
         <action
-                id="vladogol.KeymapToXml"
-                class="com.github.vladogol.intellijkeymapexporter.listeners.ExportKeymapAction"
+                id="keymapxmlexporter.KeymapToXml"
+                class="com.github.vladogol.keymapxmlexporter.listeners.ExportKeymapAction"
                 text="Export Keymap to XML"
                 description="Export full keymap to XML.">
             <add-to-group group-id="HelpMenu" relative-to-action="ProductivityGuide" anchor="after"/>
