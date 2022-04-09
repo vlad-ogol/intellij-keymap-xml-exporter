@@ -50,8 +50,7 @@ internal class XmlDumper {
     private fun toShortcutXml(shortcut: KeyboardShortcut): String {
         val firstStrokeAttr = keyStrokeToXmlString("first-keystroke", shortcut.firstKeyStroke)
         val secondStrokeAttr = keyStrokeToXmlString("second-keystroke", shortcut.secondKeyStroke)
-        val shortcutXml = "    <keyboard-shortcut $firstStrokeAttr $secondStrokeAttr />"
-        return shortcutXml
+        return "    <keyboard-shortcut $firstStrokeAttr $secondStrokeAttr />"
     }
 
     private fun keyStrokeToXmlString(keyStrokeName: String, keyStroke: KeyStroke?): String {
@@ -79,8 +78,7 @@ internal class XmlDumper {
         val modifiers = getMouseModifiersString(shortcut)
         val button = getMouseButton(shortcut)
         val clickCountName = getClickCountName(shortcut)
-        val shortcutXml = "    <mouse-shortcut keystroke=\"${modifiers}${button}${clickCountName}\" />"
-        return shortcutXml
+        return "    <mouse-shortcut keystroke=\"${modifiers}${button}${clickCountName}\" />"
     }
 
     private fun getMouseModifiersString(shortcut: MouseShortcut): String {
