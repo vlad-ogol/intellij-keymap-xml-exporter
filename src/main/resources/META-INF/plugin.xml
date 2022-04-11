@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.vladogol.keymapxmlexporter</id>
     <name>Keymap XML Exporter</name>
-    <vendor>vlad-ogol</vendor>
+    <vendor>Vladyslav Ogol</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 

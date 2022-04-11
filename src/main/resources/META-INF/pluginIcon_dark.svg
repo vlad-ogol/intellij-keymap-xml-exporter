@@ -2,7 +2,7 @@
 <svg width="80px" height="80px" id="svg1872" viewBox="146.59 144.078 161.362 150.911" xmlns="http://www.w3.org/2000/svg">
   <g style="stroke: rgb(255, 255, 255); fill: rgb(0, 24, 161); background-color:green; ">
     <g id="layer1"  transform="matrix(3.223467, 0, 0, 2.957059, 149.907791, 120.438667)">
-      <rect ry="2.2340579" rx="2.0384057" y="12" x="4" height="40" width="40" id="rect4564" style=" stroke-width: 8; stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);"/>
+      <rect ry="2.2340579" rx="2.0384057" y="12" x="4" height="40" width="40" id="rect4564" style=" stroke-width: 8; stroke: rgb(190, 190, 190); fill: rgb(190, 190, 190);"/>
       <rect style="fill-opacity: 1; stroke-width: 1px; " id="rect1880" width="40" height="24" x="4" y="12" rx="2.0384057" ry="2.2340579"/>
       <path style="fill-opacity: 0.75; stroke-width: 4; " d="M 14,30 L 33,30" id="path2768"/>
       <path id="path3655" d="M 7,30 L 12,30" style="fill-opacity: 0.75; stroke-width: 4; "/>
