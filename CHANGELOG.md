@@ -1,7 +1,7 @@
 # intellij-keymap-xml-exporter Changelog
 
 ## [Unreleased]
-- Remove upper bound of required IntelliJ Platform versions
+- Relaxed IntelliJ Platform version requirements
 
 ## [0.9.1]
 ### Added
