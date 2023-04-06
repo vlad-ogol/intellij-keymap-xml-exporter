@@ -1,1 +1,1 @@
-rootProject.name = "intellij-keymap-xml-exporter"
+rootProject.name = "IntelliJ Platform Plugin Template"
