@@ -1,6 +1,8 @@
 # intellij-keymap-xml-exporter Changelog
 
 ## [Unreleased]
+
+## [0.9.3]
 - Added support of IntelliJ 2022.x
 
 ## [0.9.2]
